@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.station-menu {
+    max-width: 960px;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+#light .station-menu {
+    background-color: #ffffff;
+}
+
+#dark .station-menu {
+    background-color: #424242;
+}
+
+.station-menu .station-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.station-menu .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.station-menu .icon {
+    font-size: 36px;
+}
+
+#light .station-menu .icon {
+    color: #3c3c43;
+}
+
+#dark .station-menu .icon {
+    color: #ffffff;
+}
+
+.station-menu .title-text {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+#light .station-menu .title-text {
+    color: #3C3C43;
+}
+
+#dark .station-menu .title-text {
+    color: #ffffff;
+}
+
+.station-menu .station-info {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+}
+
+#light .station-menu .station-info {
+    color: #616161;
+}
+
+#dark .station-menu .station-info {
+    color: #EEEEEE;
+}
+
+.station-menu .salinity-con {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 16px 24px 16px 16px;
+    margin-left: 24px;
+    min-width: 287px;
+}
+
+#light .station-menu .salinity-con {
+    border: 1px solid #BDBDBD;
+}
+
+#dark .station-menu .salinity-con {
+    border: 1px solid #9E9E9E;
+}
+
+.station-menu .img-con {
+    width: 100px;
+    height: 100px;
+}
+
+.station-menu .img-con img {
+    width: 100%;
+}
+
+.station-menu .salinity {
+    display: flex;
+    align-items: baseline;
+}
+
+.station-menu .ec {
+    display: flex;
+    align-items: baseline;
+}
+
+.station-menu .salinity-value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#light .station-menu .salinity-value {
+    color: #3C3C43;
+}
+
+#dark .station-menu .salinity-value {
+    color: #ffffff;
+}
+
+.station-menu .salinity-unit {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+#light .station-menu .salinity-unit {
+    color: #3C3C43;
+}
+
+#dark .station-menu .salinity-unit {
+    color: #ffffff;
+}
+
+.station-menu .ec-value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#light .station-menu .ec-value {
+    color: #3C3C43;
+}
+
+#dark .station-menu .ec-value {
+    color: #ffffff;
+}
+
+.station-menu .ec-unit {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+#light .station-menu .ec-unit {
+    color: #3C3C43;
+}
+
+#dark .station-menu .ec-unit {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+    .station-menu {
+        max-width: 540px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+        padding: 16px;
+        flex-direction: column;
+    }
+
+    .station-menu .title {
+        margin-bottom: 4px;
+    }
+
+    .station-menu .icon {
+        font-size: 24px;
+    }
+
+    .station-menu .title-text {
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    .station-menu .station-info {
+        font-size: 14px;
+    }
+
+    .station-menu .salinity-con {
+        border-radius: 8px;
+        padding: 12px 16px 12px 12px;
+        margin-left: 0px;
+        margin-top: 16px;
+        min-width: none;
+    }
+
+    .station-menu .img-con {
+        width: 64px;
+        height: 64px;
+    }
+
+    .station-menu .salinity-value {
+        font-size: 28px;
+    }
+
+    .station-menu .salinity-unit {
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    .station-menu .ec-value {
+        font-size: 12px;
+    }
+
+    .station-menu .ec-unit {
+        font-size: 12px;
+        margin-left: 4px;
+    }
+}

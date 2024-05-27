@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hour-forecast-card {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#light .hour-forecast-card {
+    border-right: 1px solid #bdbdbd;
+    background-color: #ffffff;
+}
+
+#dark .hour-forecast-card {
+    border-right: 1px solid #9e9e9e;
+    background-color: #424242;
+}
+
+.hour-forecast-card .date-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 16px auto 0;
+}
+
+#light .hour-forecast-card .date-text {
+    color: #3c3c43;
+}
+
+#dark .hour-forecast-card .date-text {
+    color: #ffffff;
+}
+
+.hour-forecast-card .time-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 8px auto 32px;
+}
+
+#light .hour-forecast-card .time-text {
+    color: #3c3c43;
+}
+
+#dark .hour-forecast-card .time-text {
+    color: #ffffff;
+}
+
+.hour-forecast-card .salinity-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-right: 4px;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#light .hour-forecast-card .salinity-value {
+    color: #3c3c43;
+}
+
+#dark .hour-forecast-card .salinity-value {
+    color: #ffffff;
+}
+
+.hour-forecast-card .ec-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-right: 4px;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#light .hour-forecast-card .ec-value {
+    color: #3c3c43;
+}
+
+#dark .hour-forecast-card .ec-value {
+    color: #ffffff;
+}
+
+.hour-forecast-card .img-con {
+    width: 72px;
+    height: 72px;
+    margin: 0 64px;
+}
+
+.hour-forecast-card .img-con img {
+    width: 100%;
+    height: 100%;
+}
+
+.hour-forecast-card .salinity-info {
+    display: flex;
+    margin: 32px auto 4px;
+    justify-content: center;
+    width: 100%;
+}
+
+.hour-forecast-card .ec-info {
+    display: flex;
+    margin: 0 auto 16px;
+    justify-content: center;
+    width: 100%;
+}
+
+.hour-forecast-card .salinity-unit {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#light .hour-forecast-card .salinity-unit {
+    color: #3c3c43;
+}
+
+#dark .hour-forecast-card .salinity-unit {
+    color: #ffffff;
+}
+
+.hour-forecast-card .ec-unit {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+#light .hour-forecast-card .ec-unit {
+    color: #3c3c43;
+}
+
+#dark .hour-forecast-card .ec-unit {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+    .hour-forecast-card {
+        width: 140px;
+    }
+
+    .hour-forecast-card .img-con {
+        width: 48px;
+        height: 48px;
+        margin: 0 46px;
+    }
+
+    .hour-forecast-card .date-text {
+        margin: 12px auto 0;
+        font-size: 0.75rem;
+    }
+
+    .hour-forecast-card .time-text {
+        margin: 6px auto 24px;
+        font-size: 0.875rem;
+    }
+
+    .hour-forecast-card .salinity-info {
+        margin: 24px auto 2px;
+    }
+
+    .hour-forecast-card .ec-info {
+        margin: 0 auto 12px;
+    }
+
+    .hour-forecast-card .salinity-value {
+        font-size: 1.125rem;
+    }
+
+    .hour-forecast-card .salinity-unit {
+        font-size: 1.125rem;
+    }
+
+    .hour-forecast-card .ec-value {
+        font-size: 0.75rem;
+    }
+
+    .hour-forecast-card .ec-unit {
+        font-size: 0.75rem;
+    }
+}

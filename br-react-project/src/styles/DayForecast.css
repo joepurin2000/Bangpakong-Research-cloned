@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.day-forecast {
+    max-width: 960px;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+#light .day-forecast {
+    background-color: #ffffff;
+}
+
+#dark .day-forecast {
+    background-color: #424242;
+}
+
+.day-forecast .footer {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid #BDBDBD;
+}
+
+#light .day-forecast .footer {
+    color: #3c3c43;
+}
+
+#dark .day-forecast .footer {
+    color: #ffffff;
+}
+
+.day-forecast .today-icon {
+    margin-right: 8px;
+} 
+
+.day-forecast .today-con {
+    display: flex;
+    align-items: center;
+}
+
+.day-forecast .today-text {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.day-forecast .date-text {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+    .day-forecast {
+        max-width: 540px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+    
+    .day-forecast .footer {
+        padding: 12px 16px;
+        border-top: 1px solid #BDBDBD;
+    }
+}
