@@ -1,4 +1,4 @@
-# Bangpakong-Research-cloned
+# Bangpakong-Research (cloned)
 
 โครงงานนี้ มาจากการโคลนตัวจริงที่ถูกตั้งค่าเป็น Private จากเจ้าของ
 
