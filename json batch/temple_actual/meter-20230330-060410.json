@@ -1,0 +1,15 @@
+{
+    "ThingName": "2030004355593",
+    "IMEI": "864700049942857",
+    "IMSI": "520039400105232",
+    "ICCID": "8966032030004355593",
+    "Sensor": {
+        "EC": 7.2,
+        "temperature": 31.25,
+        "timerec": 20230330060519
+    },
+    "OperationStatus": {
+        "Code": "20000",
+        "DeveloperMessage": "The requested operation was successfully."
+    }
+}

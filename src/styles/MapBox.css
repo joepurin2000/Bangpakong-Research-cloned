@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map-box {
+    max-width: 960px;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+#light .map-box {
+    background-color: #ffffff;
+}
+
+#dark .map-box {
+    background-color: #424242;
+}
+
+.map-box .header {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#light .map-box .header {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+#dark .map-box .header {
+    border-bottom: 1px solid #9e9e9e;
+}
+
+#light .map-box .icon {
+    color: #3c3c43;
+}
+
+#dark .map-box .icon {
+    color: #ffffff;
+}
+
+.map-box .title-1 {
+    display: flex;
+    align-items: center;
+}
+
+.map-box .text-1 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+#light .map-box .text-1 {
+    color: #3c3c43;
+}
+
+#dark .map-box .text-1 {
+    color: #ffffff;
+}
+
+.map-box .map-con {
+    padding: 24px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.map-box .rectangle {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .map-box {
+        max-width: 540px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    .map-box .header {
+        padding: 12px 16px;
+    }
+
+    .map-box .map-con {
+        padding: 16px;
+        aspect-ratio: 4 / 3;
+        width: 100%;
+    }
+
+    .map-box .rectangle {
+        border-radius: 4px;
+    }
+}
